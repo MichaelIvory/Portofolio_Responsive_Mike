@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.project-card');
     cards.forEach(card => {
         card.addEventListener('click', (e) => {
-            if (e.target.closest('a') && !e.target.closest('.project-link-btn')) {
+            if (e.target.closest('.project-link-btn')) {
                 return;
             }
             const projectId = card.getAttribute('data-project-id');
